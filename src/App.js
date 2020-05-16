@@ -41,13 +41,12 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'cats') =>{
-    axios.get(`http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=12&rating=g&q=${query}`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=12&rating=g&q=${query}`)
     .then(response => { this.setState( {gifs: response.data.data, loading:false});})
     .catch( err => console.log(`Error fetching and parsing data ${err}`));
   }
 
   render() {
-    //console.log(this.state.gifs) 
     return (
       <div>
         <div className="main-header">

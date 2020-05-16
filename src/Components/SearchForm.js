@@ -19,7 +19,6 @@ export default class SearchForm extends Component {
   }
   
   render() {  
-    //console.log(this.searchInput)
     return (
       <form className="search-form" onSubmit={this.handleSubmit} >
         <label className="is-hidden" htmlFor="search">Search</label>
@@ -29,7 +28,7 @@ export default class SearchForm extends Component {
                ref={(input) => this.query = input}
                placeholder="Search..." />
         <button type="submit" id="submit" className="search-button"><i className="material-icons icn-search">search</i></button>
-      </form>      
+      </form>               
     );
   }
 }
