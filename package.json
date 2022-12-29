@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://mcbentivegna.github.io/gif-search",
   "devDependencies": {
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "axios": "^0.19.2",
